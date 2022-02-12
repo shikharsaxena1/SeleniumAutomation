@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="ChromeTest(failed)">
+    <parameter name="coforge" value="chrome"/>
+    <classes>
+      <class name="crossbrowserTesting.LoginExample">
+        <methods>
+          <include name="closeApp"/>
+          <include name="verifyLogout"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- crossbrowserTesting.LoginExample -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+  <test thread-count="5" parallel="tests" name="EdgeTest(failed)">
+    <parameter name="coforge" value="edge"/>
+    <classes>
+      <class name="crossbrowserTesting.LoginExample">
+        <methods>
+          <include name="closeApp"/>
+          <include name="verifyLogout"/>
+          <include name="launchApp"/>
+        </methods>
+      </class> <!-- crossbrowserTesting.LoginExample -->
+    </classes>
+  </test> <!-- EdgeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
