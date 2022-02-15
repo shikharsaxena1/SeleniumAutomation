@@ -58,7 +58,7 @@ public class Doubleclicktest {
 	String alertText = driver.switchTo().alert().getText();
 	System.out.println(alertText);
 	Assert.assertEquals(alertText, "You double clicked me.. Thank You..");
-	
+	Thread.sleep(3000);
 	driver.switchTo().alert().accept();
 	}
 
